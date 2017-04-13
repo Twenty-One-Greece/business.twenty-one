@@ -38,8 +38,7 @@ export default class Login extends React.Component {
         else alert(data.message)
     }
 
-    render() {
-        console.log(URL_FOR_USERS)
+    render() {        
         return (
         <div className="row login-area">
             <div className="col-xs-6 black">

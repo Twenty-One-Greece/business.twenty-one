@@ -19,7 +19,7 @@ ReactDOM.render(
 
     <Route path = "/dashboard" component = { Main }>
         <IndexRoute component = { Home } /> 
-        
+
         { /* List */ } 
         {/*<Route path = "/dashboard/test" component = { AllHotels }></Route>*/}
 

@@ -6,6 +6,8 @@ import AppBar from 'material-ui/AppBar';
 import FlatButton from 'material-ui/FlatButton';
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
+import mainStore from '../stores/main.jsx';
+
 
 export default class Main extends React.Component {
 
@@ -33,6 +35,7 @@ export default class Main extends React.Component {
                 <img className="logo-black" src="../uploads/logo-black.jpeg" alt="Logo"/>
                 <br/><br/>
                 <Link to='/dashboard'><MenuItem>Home</MenuItem></Link>
+                <Link to='/dashboard/new-destination' onClick={() => this.logout()}><MenuItem>Logout</MenuItem></Link>
 
             </Drawer>
             </MuiThemeProvider>
