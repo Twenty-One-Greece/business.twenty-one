@@ -5,6 +5,7 @@
     "scripts": {
         "dev": "nodemon www --ignore 'public/*'",
         "watch": "webpack --watch",
+        "db": "sudo mongod",
         "build": "webpack"
     },
     "dependencies": {

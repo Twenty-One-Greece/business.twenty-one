@@ -8,9 +8,10 @@ npm install
 ```
 
 ### Running the app
-First start the mongodb (may require sudo).  Then run the 2 npm commands.
+First start the mongodb using "npm run db" (MACOS). If you are on windows start the db manualy.
+Then run "npm run dev" and "npm run watch".
 ```
-mongod
+npm run db
 npm run dev
 npm run watch
 ```
