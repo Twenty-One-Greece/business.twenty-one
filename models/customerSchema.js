@@ -4,11 +4,13 @@ const Schema = mongoose.Schema
 // create a schema
 const customerSchema = new Schema({
     name: { type: String, required: true },
+    userID: { type: String, required: true },
     company: { type: String, default: '' },
     email: { type: String, default: '' },
     country: { type: String, default: '' },
     city: { type: String, default: '' },
     telephone: { type: Number, default: '' },
+    mobile: { type: Number, default: '' },
     created_at: Date,
     updated_at: Date
 });

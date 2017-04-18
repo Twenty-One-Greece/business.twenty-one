@@ -9,7 +9,7 @@ var mongoose = require('mongoose');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var customers = require('./routes/customers');
-
+var services = require('./routes/services');
 
 var app = express();
 
@@ -42,7 +42,7 @@ app.use(function(req, res, next) {
 app.use('/', routes);
 app.use('/users', users);
 app.use('/customers', customers);
-
+app.use('/services', services);
 
 app.use((req, res) => {
     res.sendStatus(404);

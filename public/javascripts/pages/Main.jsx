@@ -35,7 +35,9 @@ export default class Main extends React.Component {
                 <img className="logo-black" src="../uploads/logo-black.jpeg" alt="Logo"/>
                 <br/><br/>
                 <Link to='/dashboard'><MenuItem>Home</MenuItem></Link>
-                <Link to='/dashboard/new-destination' onClick={() => this.logout()}><MenuItem>Logout</MenuItem></Link>
+                <Link to='/dashboard/customers'><MenuItem>Customers</MenuItem></Link>
+                <Link to='/dashboard/services'><MenuItem>Services</MenuItem></Link>
+                <Link onClick={() => this.logout()}><MenuItem>Logout</MenuItem></Link>
 
             </Drawer>
             </MuiThemeProvider>
