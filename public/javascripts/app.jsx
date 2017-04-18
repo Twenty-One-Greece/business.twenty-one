@@ -7,6 +7,7 @@ import Main from "pages/Main.jsx";
 import Login from "pages/Login.jsx";
 import Home from "pages/Home.jsx";
 import Register from "pages/Register.jsx"
+import AllCustomers from "pages/AllCustomers.jsx"
 
 
 // Needed for onTouchTap
@@ -20,8 +21,7 @@ ReactDOM.render(
     <Route path = "/dashboard" component = { Main }>
         <IndexRoute component = { Home } /> 
 
-        { /* List */ } 
-        {/*<Route path = "/dashboard/test" component = { AllHotels }></Route>*/}
+        <Route path = "/dashboard/customers" component = { AllCustomers }></Route>
 
     </Route> 
     

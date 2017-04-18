@@ -1,5 +1,5 @@
-# React, Express, Mongodb Starter
-An isomorphic JavaScript application with [React](http://facebook.github.io/react/), [Express](expressjs.com) and [Mongodb](https://www.mongodb.com/).
+# React, Express, Mongodb Business App
+An isomorphic JavaScript application with [React](http://facebook.github.io/react/), [Express](expressjs.com) and [Mongodb](https://www.mongodb.com/). It is used for keeping track of customers and services sold.
 
 ### Installation
 Install all dependencies using:

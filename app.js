@@ -8,6 +8,8 @@ var mongoose = require('mongoose');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var customers = require('./routes/customers');
+
 
 var app = express();
 
@@ -39,6 +41,8 @@ app.use(function(req, res, next) {
 // Routes
 app.use('/', routes);
 app.use('/users', users);
+app.use('/customers', customers);
+
 
 app.use((req, res) => {
     res.sendStatus(404);

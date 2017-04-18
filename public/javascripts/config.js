@@ -14,3 +14,4 @@ if (PROD_ENV) {
 }
 
 export const URL_FOR_USERS = URL + 'users'
+export const URL_FOR_CUSTOMERS = URL + 'customers'

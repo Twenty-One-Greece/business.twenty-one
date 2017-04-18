@@ -5,14 +5,14 @@ const SALT_WORK_FACTOR = 10
 
 // create a schema
 const userSchema = new Schema({
-    name:       { type: String,     required: true },
-    username:   { type: String,     required: true, unique: true },
-    company:    { type: String,     default: '' },
-    email:      { type: String,     required: true },
-    password:   { type: String,     required: true },
-    country:    { type: String,     required: true },
-    city:       { type: String,     required: true },
-    telephone:  { type: Number,     required: true },
+    name: { type: String, required: true },
+    username: { type: String, required: true, unique: true },
+    company: { type: String, default: '' },
+    email: { type: String, required: true },
+    password: { type: String, required: true },
+    country: { type: String, required: true },
+    city: { type: String, required: true },
+    telephone: { type: Number, required: true },
     created_at: Date,
     updated_at: Date
 });
