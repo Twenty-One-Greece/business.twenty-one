@@ -32,10 +32,12 @@ export default class AllServices extends React.Component {
 
     renderServices() {
         let services = this.state.services.map((service) => {
+            const active = (service.active) ? '' : '#ff4081'
             return (
                 <tr key={service._id}>
-                    <td>{service.name}</td>
+                    <td style={{color: active}}>{service.name}</td>
                     <td>{service.email}</td>
+                    <td>{service.priceWithTax}€ - {service.tax}%</td>
                     <td><span onClick={() => this.handleDeletePress(service._id, service.name)} className='remove glyphicon glyphicon-trash'></span></td>
                     <td><Link to={'/dashboard/edit-service/' + service._id} className='edit glyphicon glyphicon-edit'></Link></td>
                 </tr>

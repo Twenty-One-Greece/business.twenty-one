@@ -2,7 +2,6 @@ const express = require("express");
 const router = express.Router();
 const Customer = require('../models/customerSchema.js')
 
-
 // Create New Customer
 router.post('/new', (req, res) => {
     const data = req.body
@@ -32,7 +31,7 @@ router.post('/one', (req, res) => {
     })
 })
 
-// Get One Customer
+// Delete One Customer
 router.delete('/one/:customerID', (req, res) => {
     Customer.findByIdAndRemove(req.params.customerID, (err) => {
         if (err) return res.send(err)

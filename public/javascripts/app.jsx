@@ -12,7 +12,7 @@ import NewCustomer from "pages/NewCustomer.jsx"
 import EditCustomer from "pages/EditCustomer.jsx"
 import AllServices from "pages/AllServices.jsx"
 import NewService from "pages/NewService.jsx"
-// import EditService from "pages/EditService.jsx"
+import EditService from "pages/EditService.jsx"
 
 // Needed for onTouchTap
 injectTapEventPlugin();
@@ -30,6 +30,7 @@ ReactDOM.render(
         <Route path = "/dashboard/edit-customer/:customerID" component = { EditCustomer }></Route>
         <Route path = "/dashboard/services" component = { AllServices }></Route>
         <Route path = "/dashboard/new-service" component = { NewService }></Route>
+        <Route path = "/dashboard/edit-service/:serviceID" component = { EditService }></Route>
 
     </Route> 
     

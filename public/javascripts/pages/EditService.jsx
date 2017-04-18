@@ -17,6 +17,17 @@ export default class NewService extends React.Component {
         this.handleChange = this.handleChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
         this.handleResponse = this.handleResponse.bind(this)
+        this.getService = this.getService.bind(this)
+    }
+    
+    componentWillMount() {
+        this.getService()
+    }
+    
+    getService() {
+        const data = {_id: this.props.params.serviceID}
+        axios.post(URL_FOR_SERVICES + '/one', data)
+        .then((res) => this.setState(res.data))
     }
 
     handleChange(name) {
@@ -30,7 +41,7 @@ export default class NewService extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault()
-        axios.post(URL_FOR_SERVICES + '/new', this.state)
+        axios.post(URL_FOR_SERVICES + '/update/' + this.props.params.serviceID, this.state)
         .then((res) => this.handleResponse(res.data))
     }
 
@@ -45,7 +56,7 @@ export default class NewService extends React.Component {
         <div className='row'>
             <form onSubmit={this.handleSubmit}>
             <div className="col-md-6">
-            <h3>New Service</h3>
+            <h3>Edit Service</h3>
 
                 <MuiThemeProvider>
                 <TextField fullWidth={true} floatingLabelText={'Name'} value={this.state.name} onChange={this.handleChange("name")} required={true}/>
