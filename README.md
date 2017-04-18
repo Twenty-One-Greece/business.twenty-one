@@ -22,6 +22,6 @@ Before uploading for production build the bundle.js.
 npm run build
 ```
 
-# Documentation for React Material-UI
+### Documentation for React Material-UI
 Material-UI is a Set of React Components that Implement Google's Material Design.
 More info can be found [here](http://www.material-ui.com/#/), and the docs for the components used can be found [here](http://www.material-ui.com/#/components/app-bar).
